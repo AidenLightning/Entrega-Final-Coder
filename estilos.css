@@ -393,6 +393,7 @@ form {
 .nleft2 {
   background-image: url(./media/aidenlightmusicqr.png);
   max-width: 300px;
+  min-width: 305px;
   background-size: cover;
   background-position: center;
   height: 100px;
@@ -401,13 +402,13 @@ form {
   min-height: 350px;
   margin-left: 5px;
   margin-right: 2.5px;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .nright2 {
   background: linear-gradient(to left, #702e2e, #3a1818);
   padding: 10px;
-  padding-top: 40px;
+  padding-top: 50px;
   width: 100%;
   height: 300px;
   min-height: 350px;
