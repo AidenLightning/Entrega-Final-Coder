@@ -126,6 +126,11 @@ main {
   display: flex;
 }
 
+.maincontact {
+  display: flex;
+  flex-direction: column;
+}
+
 .nleft {
   background-image: url(./media/Foto2.PNG);
   background-size: cover;
@@ -393,16 +398,16 @@ form {
 .nleft2 {
   background-image: url(./media/aidenlightmusicqr.png);
   max-width: 300px;
-  min-width: 305px;
+  min-width: 260px;
   background-size: cover;
   background-position: center;
-  height: 100px;
+  height: 300px;
   width: 100%;
   border: 3px solid #9e382c;
   min-height: 350px;
-  margin-left: 5px;
-  margin-right: 2.5px;
   border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .nright2 {
@@ -413,8 +418,8 @@ form {
   height: 300px;
   min-height: 350px;
   box-shadow: 1px 1px 5px #000;
-  margin-left: 2.5px;
-  margin-right: 5px;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 5px;
 }
 
@@ -491,6 +496,9 @@ form {
   }
   .menu {
     display: none;
+  }
+  .maincontact {
+    flex-direction: row;
   }
 }
 @media only screen and (min-width: 1300px) {
