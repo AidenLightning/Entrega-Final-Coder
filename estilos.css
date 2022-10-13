@@ -58,6 +58,8 @@ header {
 }
 .logo img {
   padding-right: 10px;
+  height: 40px;
+  opacity: 95%;
 }
 
 @-webkit-keyframes logoefecto {
@@ -114,12 +116,27 @@ nav {
   top: 90px;
   right: 20px;
   display: none;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 10px;
+}
+.menu ul ul li {
   padding: 10px;
 }
 
-.menu ul li:hover ul {
+.burger-shower {
+  display: none;
+}
+
+.burger-shower:checked ~ .burger-menu {
   display: block;
+}
+
+.hamburger {
+  display: block;
+}
+
+.burger-menu {
+  display: none;
 }
 
 main {
@@ -394,6 +411,15 @@ form {
   border-radius: 5px;
   font-size: 20px;
 }
+form input {
+  font-size: 15px;
+  padding: auto;
+  margin: auto;
+}
+form textarea {
+  font-size: 15px;
+  width: 230px;
+}
 
 .nleft2 {
   background-image: url(./media/aidenlightmusicqr.png);
@@ -428,6 +454,91 @@ form {
   border-radius: 5px;
 }
 
+@media only screen and (max-width: 430px) {
+  .nright {
+    font-size: 13px;
+  }
+  .nright h1 {
+    font-size: 35px;
+  }
+  .banner {
+    height: 235px;
+  }
+  .fa-brands {
+    margin-top: 10px;
+  }
+  .fa-bars {
+    padding-top: 50px;
+    margin: auto;
+  }
+  .call {
+    font-size: 90%;
+  }
+  .call img {
+    width: 250px;
+  }
+  .table {
+    padding: 0px;
+    border-spacing: 10px;
+    font-size: 15px;
+  }
+  .calendar h2 {
+    font-size: 20px;
+  }
+  .calendar {
+    padding: 10px;
+  }
+  form {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  form input {
+    font-size: 12px;
+    padding: auto;
+    margin: auto;
+  }
+  form textarea {
+    font-size: 12px;
+    width: 200px;
+  }
+  .logo img {
+    height: 80px;
+  }
+}
+@media only screen and (min-width: 430px) and (max-width: 560px) {
+  .nright {
+    font-size: 16px;
+  }
+  .nright h1 {
+    font-size: 38px;
+  }
+  .banner {
+    height: 260px;
+  }
+  .fa-bars {
+    padding-top: 40px;
+    padding-right: 50px;
+    margin: auto;
+  }
+  .call {
+    font-size: 95%;
+  }
+  .call img {
+    width: 300px;
+  }
+  .calendar h2 {
+    font-size: 23px;
+  }
+  .table {
+    padding: 10px;
+    border-spacing: 10px;
+    font-size: 15px;
+  }
+  form {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
 @media only screen and (min-width: 770px) {
   .banner {
     height: 500px;
